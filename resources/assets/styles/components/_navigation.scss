@@ -48,6 +48,7 @@
     }
 
     .navbar-brand {
+      margin-right: auto;
       align-items: center;
 
       span {
@@ -57,9 +58,10 @@
       }
 
       img {
-        width: 2 * $spacer;
+        width: 1.5 * $spacer;
         height: auto;
         margin-right: 0.75rem;
+        max-height: none;
       }
     }
 

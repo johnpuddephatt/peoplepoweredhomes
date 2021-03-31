@@ -24,23 +24,8 @@
 
 <div class="secondary-footer">
   <div class="container container--footer-logos container--desktop">
-    <a href="https://www.communityledhomes.org.uk/" class="footer-logo-link xl">
-      <img class="footer-logo" src="@asset('images/funders/CommunityLedHomes.jpg')">
-    </a>
-    <a href="https://www.uk.coop/" class="footer-logo-link medium">
-      <img class="footer-logo" src="@asset('images/funders/cuk.png')">
-    </a>
     <a href="http://www.thepowertochange.org.uk/" class="footer-logo-link x-wide">
       <img class="footer-logo" src="@asset('images/funders/powertochange.png')">
-    </a>
-    <a href="http://communityshares.org.uk" class="footer-logo-link medium">
-      <img class="footer-logo" src="@asset('images/funders/Community-Shares-logo-b.png')">
-    </a>
-    <a href="http://www.communitylandtrusts.org.uk/" class="footer-logo-link">
-      <img class="footer-logo" src="@asset('images/funders/CLT-b.png')">
-    </a>
-    <a href="https://www.cch.coop/" class="footer-logo-link wide">
-      <img class="footer-logo" src="@asset('images/funders/cch.png')">
     </a>
   </div>
 </div>

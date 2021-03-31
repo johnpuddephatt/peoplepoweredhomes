@@ -35,7 +35,111 @@
   </div>
 </section> --}}
 
-<section class="section section--newsletter">
+<section class="section section--about">
+  <div class="container container__desktop">
+    @include('images.easel')
+    <div class="about-text">
+      <h3 class="title _large">We’re the Community Led Housing enabler hub for West and South Yorkshire</h3>
+      <p>We provide advice, support and development consultancy to the #CommunityLedHousing sector.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-contact">
+  <div class="container container__desktop">
+
+    <h2 class="title has-text-align-center is-size-2">Contact us</h2>
+
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <form method="POST" style="max-width: 480px;" action="https://form.letsdance.agency/57nQPDw4" class="contact-form">
+    <input type="text" name="_honey" value="" style="display: none;">
+    <input type="hidden" name="_subject" value="Message from leedscommunityhomes.org.uk">
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" name="_replyto" placeholder="Your email" required="">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" name="name" placeholder="Your name" required="">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" rows="4" name="message" placeholder="Your message" required=""></textarea>
+      </div>
+    </div>
+    <div class="field">
+    <div class="g-recaptcha" data-sitekey="6LdNn1AUAAAAAA-VLy7CCzufqQi7EhPyoWQwcHIM"></div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button type="submit" class="button is-link is-large">Send</button>
+      </div>
+
+    </div>
+    </form>
+
+
+    <script>
+    if (document.forms[0] && window.FormData) {
+
+        var message = new Object();
+        message.loading = 'Loading...';
+        message.success = 'Thank you. Message received!';
+        message.failure = 'Whoops! There was a problem sending your message.';
+
+        var form = document.forms[0];
+        var formAction = form.getAttribute("action");
+        var statusMessage = document.createElement('div');
+        statusMessage.className = 'status';
+
+        // Set up the AJAX request
+        var request = new XMLHttpRequest();
+        request.open('POST', formAction, true);
+        request.setRequestHeader('accept', 'application/json');
+
+        // Listen for the form being submitted
+        form.addEventListener('submit', function(evt) {
+
+            evt.preventDefault();
+          form.insertAdjacentElement('beforeend', statusMessage);
+
+            // Create a new FormData object passing in the form's key value pairs (that was easy!)
+            var formData = new FormData(form);
+
+            // Send the formData
+            request.send(formData);
+
+            // Watch for changes to request.readyState and update the statusMessage accordingly
+            request.onreadystatechange = function () {
+
+            // <4 =  waiting on response from server
+            if (request.readyState < 4)
+                statusMessage.innerHTML = message.loading;
+
+            // 4 = Response from server has been completely loaded.
+            else if (request.readyState === 4) {
+
+                // 200 - 299 = successful
+                if (request.status == 200 && request.status < 300)
+                    statusMessage.innerHTML = message.success;
+                else
+                  statusMessage.innerHTML = message.failure;
+            }
+            }
+        });
+
+    }
+    </script>
+  </div>
+</div>
+{{-- <section class="section section--newsletter">
   <div class="container container__desktop">
     <img class="newsletter-image" src="@asset('images/hub-announcement.svg')" />
     <div class="newsletter-text">
@@ -49,7 +153,7 @@
     </div>
 
   </div>
-</section>
+</section> --}}
 {{--
 <section class="section section--blog">
   <div class="container">
