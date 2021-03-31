@@ -1,4 +1,4 @@
-<svg style="height: auto" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 821.951 774.501" xml:space="preserve" width="821.951" height="774.501">
+<svg style="height: auto; flex: 0 0 40%" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 821.951 774.501" xml:space="preserve" width="821.951" height="774.501">
   <style type="text/css" id="style1526">
     .st3{fill:#64e2d8}.st64,.st67,.st68{fill:#fff;stroke:#000;stroke-width:2.9861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st67,.st68{fill:none;stroke-width:3.6355}.st68{stroke-width:2.9861}
   </style>
