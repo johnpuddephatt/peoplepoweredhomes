@@ -4,7 +4,7 @@
       @if(get_theme_mod('phonenumber_humans'))
         <h3>Want to talk? Call us on <a href="tel:{{ get_theme_mod('phonenumber_robots')}}">{{ get_theme_mod('phonenumber_humans') }}</a></h3>
       @else
-        <h3>We build people powered homes</h3>
+        <h3>At the heart of the Community Led Housing movement</h3>
       @endif
       @if(get_theme_mod('company_info'))
         <p>{{ get_theme_mod('company_info') }}</p>
