@@ -39,8 +39,8 @@
   <div class="container container__desktop">
     @include('images.easel')
     <div class="about-text">
-      <h3 class="title _large">We’re the Community Led Housing enabler hub for West and South Yorkshire</h3>
-      <p>We provide advice, support and development consultancy to the #CommunityLedHousing sector.</p>
+      <h3 class="title _large">We are a Community Led Housing consultancy service working across the country.</h3>
+      <p>We provide advice and development support to the sector nationwide, and an enabler hub covering West and South Yorkshire.</p>
     </div>
   </div>
 </section>
