@@ -35,6 +35,32 @@
   </div>
 </section> --}}
 
+<section class="section section--blog">
+  <div class="container">
+    <h2 class="title _large has-text-centered">News and updates</h2>
+    <p class="subtitle has-text-centered">The latest from People Powered Homes</p>
+
+    <div class="container--blog">
+      @foreach($posts as $post)
+        <a href="{!! $post->link !!}" class="blog--item box" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="≤≤ forloop.index | minus: 1 |  times:200 ≥≥">
+          <div class="blog--item--image">
+            {!! $post->thumbnail !!}
+          </div>
+          <div class="blog--item--date">{{ date(get_option( 'date_format' ), strtotime($post->post_date))   }}</div>
+          <h3 class="blog--item--title">{{ $post->post_title }}</h3>
+          <p class="blog--item--excerpt">{!! $post->post_excerpt !!}</p>
+          <div class="blog--item--footer">
+            <span class="blog--item--button button is-small">Read more</span>
+          </div>
+        </a>
+      @endforeach
+    </div>
+    <div class="container container__centered">
+      <a href="/news/" class="blog--view-all">see all news and updates</a>
+    </div>
+  </div>
+</section>
+
 <section class="section section--about">
   <div class="container container__desktop">
     @include('images.easel')
